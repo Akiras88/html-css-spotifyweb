@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:400,700&display=swap');
+/* GENERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+/* TYPOGRAPHY */
+
+.u-upperCase {
+  text-transform: uppercase;
+}
+
+.u-borderRadius {
+  border-radius: 8px;
+}
+
+.u-maxWidth {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.u-middle-title {
+  font-size: 20px;
+}
+/* UTILITIES */
+.u-list-inline {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-margin-top {
+  margin-top: 120px;
+}
+.u-margin-top-middle {
+  margin-top: 70px;
+}
+.u-room-bottom {
+  padding-bottom: 30px;
+}
