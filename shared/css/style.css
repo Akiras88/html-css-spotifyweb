@@ -29,6 +29,12 @@ body {
 .u-middle-title {
   font-size: 20px;
 }
+
+/* COLOR */
+.u-white-color {
+  color: #fff;
+}
+
 /* UTILITIES */
 .u-list-inline {
   display: flex;
@@ -47,4 +53,29 @@ body {
 }
 .u-room-bottom {
   padding-bottom: 30px;
+}
+.u-room-top {
+  padding-top: 50px;
+}
+.u-room-top-large {
+  padding-top: 80px;
+}
+.u-vertical-align {
+  vertical-align: middle;
+}
+.u-padding {
+  padding: 5px 10px;
+}
+.u-padding-left {
+  padding-left: 10px;
+}
+/* utilities for img */
+
+.u-img-block {
+  display: block;
+}
+
+.img-small {
+  width: 25px;
+  max-width: 100%;
 }

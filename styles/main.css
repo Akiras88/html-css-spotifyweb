@@ -7,6 +7,7 @@
 
 
 /* MAIN WINDOW */
+
 #main-window {
   flex-grow: 1;
   display: flex;
@@ -14,22 +15,66 @@
 
 
 /* SIDEBAR */
+/* didebar top */
+
 #sidebar {
-  flex-basis: 230px; /* larghezza sidebar */
+  flex-basis: 220px; /* larghezza sidebar */
   display: flex;
   flex-direction: column;
 }
-
 .sidebar-top {
+  display: flex;
   flex-grow: 1;
-  background: #444;
+  background: #040404;
+  position: relative;
+}
+.sidebar-top .logo {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  max-width: 140px;
+}
+.navbar-top ul li,
+.navbar-top ul li h5 {
+  list-style: none;
+  padding: 5px 10px;
+}
+.navbar-top ul li a{
+  color: #54575D;
+  text-decoration: none;
+}
+.fa-plus-square {
+  font-size: 38px;
+  color: #54575D;
 }
 
+/* navbar bottom */
+.line {
+  position: relative;
+  padding: 5px 10px;
+  color: #54575D;
+}
+.line::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 190px;
+  height: 2px;
+  background: #54575D;
+}
 .sidebar-bottom {
-  height: 80px; /*debug*/
-  background: #222;
+  background: #000;
 }
-
+.profile {
+  padding: 25px 0 5px 10px;
+}
+.img-round-small {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background: grey;
+}
 /* CONTENT */
 #content {
   position: relative;
