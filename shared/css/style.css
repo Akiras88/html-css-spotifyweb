@@ -34,6 +34,9 @@ body {
 .u-white-color {
   color: #fff;
 }
+.u-grey-color {
+  color: #54575D;
+}
 
 /* UTILITIES */
 .u-list-inline {
@@ -53,6 +56,9 @@ body {
 }
 .u-room-bottom {
   padding-bottom: 30px;
+}
+.u-room-bottom-small {
+  padding-bottom: 15px;
 }
 .u-room-top {
   padding-top: 50px;
