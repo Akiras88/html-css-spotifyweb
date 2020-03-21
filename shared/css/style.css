@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:400,700&display=swap');
 /* GENERAL SETTINGS */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
+
 /* TYPOGRAPHY */
 
 .u-upperCase {
@@ -31,6 +33,7 @@ body {
 }
 
 /* COLOR */
+
 .u-white-color {
   color: #fff;
 }
@@ -39,6 +42,7 @@ body {
 }
 
 /* UTILITIES */
+
 .u-list-inline {
   display: flex;
   list-style: none;
@@ -70,12 +74,13 @@ body {
   vertical-align: middle;
 }
 .u-padding {
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 .u-padding-left {
   padding-left: 10px;
 }
-/* utilities for img */
+
+/* UTILITIES FOR IMG */
 
 .u-img-block {
   display: block;
@@ -88,4 +93,16 @@ body {
 .img-mini {
   width: 45px;
   max-width: 100%;
+}
+
+/* UTILITIES FOR MEDIA QUERY */
+ 
+.u-small-device {
+  display: inline-block;
+}
+.u-small-device-inline {
+  display: inline;
+}
+.u-large-device {
+  display: none;
 }

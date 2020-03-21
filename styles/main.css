@@ -1,10 +1,10 @@
 /* LAYOUT */
+
 #app {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-
 
 /* MAIN WINDOW */
 
@@ -13,12 +13,11 @@
   display: flex;
 }
 
-
 /* SIDEBAR */
+
 /* sidebar top */
 
 #sidebar {
-  flex-basis: 220px; /* larghezza sidebar */
   display: flex;
   flex-direction: column;
 }
@@ -34,10 +33,16 @@
   top: 20px;
   max-width: 140px;
 }
+.sidebar-top .logo.img-small {
+  position: absolute;
+  left: 20px;
+}
+/* navbar top */
+
 .navbar-top ul li,
-.navbar-top ul li h5 {
+.navbar-top ul li {
   list-style: none;
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 .navbar-top ul li a{
   color: #54575D;
@@ -57,8 +62,8 @@
   font-size: 38px;
   color: #54575D;
 }
-
 /* navbar bottom */
+
 .line {
   position: relative;
   padding: 5px 10px;
@@ -68,16 +73,19 @@
   content: '';
   position: absolute;
   top: 30px;
-  left: 10px;
-  width: 190px;
+  left: -26px;
+  width: 175px;
   height: 2px;
   background: #54575D;
+}
+.fa-arrow-alt-circle-down {
+  padding-left: 20px;
 }
 .sidebar-bottom {
   background: #000;
 }
 .profile {
-  padding: 25px 0 5px 10px;
+  padding: 25px 0 5px 15px;
 }
 .img-round-small {
   -moz-border-radius: 25px;
@@ -85,13 +93,16 @@
   border-radius: 25px;
   background: grey;
 }
+
 /* CONTENT */
+
 #content {
   position: relative;
   flex-grow: 1;
   background: #000;
 }
 /* top bar fixed fake */
+
 .content-top-bar {
   position: absolute;
   top: 0;
@@ -118,7 +129,6 @@
   letter-spacing: 1.76px;
   border-radius: 500px;
   color: #fff;
-  padding: 8px 34px;
   text-align: center;
   background-color: transparent;
   border: 2px solid #fff;
@@ -128,6 +138,7 @@
   top: 23px;
 }
 /* content menu */
+
 .scrollable {
   background: #181818;
   position: relative;
@@ -160,19 +171,17 @@
   opacity: 1;
 }
 /* recently player */
+
 .content-category {
   position: relative;
 }
 .container-album {
   display: flex;
-  flex-basis: 25%;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .cover-album {
   position: relative;
-  height: 160px;
-  width: 166px;
+  max-height: 160px;
+  max-width: 166px;
   margin: 20px 10px 10px;
 }
 .container-album .cover-album img {
@@ -218,12 +227,15 @@
   font-size: 45px; 
 }
 /* section img round */
+
 .img-round {
   -moz-border-radius: 170px;
   -webkit-border-radius: 170px;
   border-radius: 170px;
 }
+
 /* BOTTOM PLAYER */
+
 #player {
   background:#282828;
   display: flex;
@@ -246,7 +258,6 @@
   padding-top: 30px;
   letter-spacing: 1.76px;
 }
-
 /* central player */
 
 .central-player {
