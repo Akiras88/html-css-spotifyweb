@@ -159,7 +159,7 @@
 .u-list-inline a:hover::after {
   opacity: 1;
 }
-/* content category */
+/* recently player */
 .content-category {
   position: relative;
 }
@@ -170,6 +170,7 @@
   flex-wrap: wrap;
 }
 .cover-album {
+  position: relative;
   height: 160px;
   width: 166px;
   margin: 20px 10px 10px;
@@ -181,10 +182,40 @@
   margin: 20px 10px 10px;
   flex-shrink: 0;
 }
+/* hover album effect */
+
+.cover-album img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+}
+.middle {
+  transition: .2s ease;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-60%, -60%);
+  -ms-transform: translate(-60%, -60%);
+  text-align: center;
+  opacity: 0;
+}
 .content-category span {
   display: block;
   padding-top: 3px;
   color: #b3b3b3;
+}
+.cover-album:hover img{
+  opacity: 0.3;
+}
+.cover-album:hover .middle {
+  opacity: 1;
+}
+.i-play .fa-play-circle{
+  color: white;
+  font-size: 45px; 
 }
 /* section img round */
 .img-round {
